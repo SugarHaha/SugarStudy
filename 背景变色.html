@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{ width: 150px; height: 150px; background:#FF0000; color: #fff; line-height: 150px; text-align: center;}
+		</style>
+		<script>
+			function toRed(){
+				var obody=document.getElementById('body');
+				var obox=document.getElementById('box');
+				obody.style.background='red';
+				obox.style.background='yellow';
+				obox.style.color='#000';
+			}
+			function toYellow(){
+				var obody=document.getElementById('body');
+				var obox=document.getElementById('box');
+				obody.style.background='yellow';
+				obox.style.background='green';
+				obox.style.color='#fff';
+			}
+			function toGreen(){
+				var obody=document.getElementById('body');
+				var obox=document.getElementById('box');
+				obody.style.background='green';
+				obox.style.background='red';
+				obox.style.color='#fff';
+			}
+		</script>
+	</head>
+	<body id="body">
+		<button type="button" value="红色" onclick="toRed()">红色</button>
+		<button type="button" value="黄色" onclick="toYellow()">黄色</button>
+		<button type="button" value="绿色" onclick="toGreen()">绿色</button>
+		<div id="box">
+			我是box
+		</div>
+	</body>
+</html>

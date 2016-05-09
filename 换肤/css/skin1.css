@@ -1,0 +1,9 @@
+body{ background: #FF0000;}
+#box{ 
+	width: 150px; 
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	background:yellow; 
+	color: #000;
+	}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.red{ background: #FF0000;}
+			.bule{background: blue;}
+			.yellow{ background: #FFFF00;}
+		</style>
+		<script>
+			//红色
+			function toRed(){
+				var obody=document.body;
+				obody.className="red"
+			}
+			//蓝色
+			function toBule(){
+				var obody=document.body;
+				obody.className="bule"
+			}
+			//黄色
+			function toYellow(){
+				var obody=document.body;
+				obody.className="yellow"
+			}
+		</script>
+	</head>
+	<body>
+		<button type="button" onclick="toRed()">红色</button>
+		<button type="button" onclick="toBule()">蓝色</button>
+		<button type="button" onclick="toYellow()">黄色</button>
+		<button type="button"onclick="toStyle()">默认</button>
+	</body>
+</html>
+

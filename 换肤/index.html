@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/style.css" id="link">
+		<script>
+			function toRed(){
+				var oLink=document.getElementById('link');
+				oLink.href='css/skin1.css';
+			}
+			function toYellow(){
+				var oLink=document.getElementById('link');
+				oLink.href='css/skin2.css';
+			}
+			function toGreen(){
+				var oLink=document.getElementById('link');
+				oLink.href='css/skin3.css';
+			}
+			function toStyle(){
+				var oLink=document.getElementById('link');
+				oLink.href='css/style.css';
+			}
+		</script>
+	</head>
+	<body id="link">
+		<button type="button" value="红色" onclick="toRed()">红色</button>
+		<button type="button" value="黄色" onclick="toYellow()">黄色</button>
+		<button type="button" value="绿色" onclick="toGreen()">绿色</button>
+		<button type="button" value="默认" onclick="toStyle()">默认</button>
+		<div id="box">
+			我是box
+		</div>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{ width: 200px; height: 200px; background: red; display: none;}
+		</style>
+		<script>
+			function showhide(){
+				var oDiv=document.getElementById('box');
+				if(oDiv.style.display=='block'){
+					oDiv.style.display="none"	
+				}else{
+					oDiv.style.display="block"
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<button type="button" onclick="showhide()">登陆</button>
+		<div id="box"></div>
+	</body>
+</html>

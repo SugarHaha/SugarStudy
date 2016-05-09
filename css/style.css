@@ -1,0 +1,6 @@
+#div1{width: 100px; height: 80px; background: red; display: none;}
+#div2{width: 100px; height: 80px; background: red; display: block;}
+#div3{width: 100px; height: 80px; background: red; display: block;}
+#div4{width: 100px; height: 80px; background: red; display: block;}
+.box{ float: left; background: black;}
+.box1 li{ width: 120px;}
