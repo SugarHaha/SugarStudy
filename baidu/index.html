@@ -77,14 +77,36 @@
 	function login(){
 		var oLogin=document.getElementById('loginbox');
 		oLogin.style.display='block';
-		oLogin.style.marginLeft='50%';
-		oLogin.style.paddingLeft='-200px';
-		oLogin.style.background='#000000';
+		// oLogin.style.marginLeft='50%';
+		// oLogin.style.paddingLeft='-200px';
+		console.log("document.body.scrollWidth = " + document.body.scrollWidth);
+		console.log("oLogin.offsetWidth = " + oLogin.offsetWidth);
+		oLogin.style.marginLeft = document.body.scrollWidth / 2 - oLogin.offsetWidth / 2 + "px";
+		oLogin.style.marginTop= document.body.scrollHeight / 2 - oLogin.offsetHeight / 2 + "px";
+		
+		var oLoginBox = document.getElementById("loginbg");
+		oLoginBox.style.width = document.body.scrollWidth + "px";
+		oLoginBox.style.height = document.body.scrollHeight + "px";
+		oLoginBox.style.position = "fixed";
+		oLoginBox.style.top = "0";
+		oLoginBox.style.left = "0";
+		oLoginBox.style.backgroundColor = "#333";
 	}
+
+
 	//登录关闭
 	function login_close_hide(){
 		var div4=document.getElementById('loginbox');
 		div4.style.display='none';
+		
+		var oLoginBox = document.getElementById("loginbg");
+		oLoginBox.style.width = document.body.scrollWidth + "px";
+		oLoginBox.style.height = document.body.scrollHeight + "px";
+		oLoginBox.style.position = "fixed";
+		oLoginBox.style.top = "0";
+		oLoginBox.style.left = "0";
+		oLoginBox.style.backgroundColor = "#333";
+		oLoginBox.style.display='none';
 	}
 	
 </script>
