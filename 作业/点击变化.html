@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box { height: 30px; width: 100%;}
+			.box li{ float: left; margin-right: 10px; list-style-type: none;}
+			#box1{width: 100px; height: 100px; background: red;}
+		</style>
+		<script type="text/javascript">
+			//变宽
+			function onwidth(){
+				var div1=document.getElementById('box1');
+				div1.style.width='300px'
+			}
+			//变宽
+			function onheight(){
+				var div1=document.getElementById('box1');
+				div1.style.height='300px'
+			}
+			//变色
+			function onbg(){
+				var div1=document.getElementById('box1');
+				div1.style.background='blue'
+			}
+			//隐藏
+			function onhide(){
+				var div1=document.getElementById('box1');
+				div1.style.display='none'
+			}
+			//显示
+			function onshowa(){
+				var div1=document.getElementById('box1');
+				div1.style.display='block'
+			}
+			//右移300
+			function onright(){
+				var div1=document.getElementById('box1');
+				div1.style. marginLeft='300px'
+			}
+		</script>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li><button type="button" onclick="onwidth()">变宽</button></li>
+				<li><button type="button" onclick="onheight()">变高</button></li>
+				<li><button type="button" onclick="onbg()">变色</button></li>
+				<li><button type="button" onclick="onhide()">隐藏</button></li>
+				<li><button type="button" onclick="onshowa()">显示</button></li>
+				<li><button type="button" onclick="onright()">右移300</button></li>
+			</ul>
+		</div>		
+		<div id="box1"></div>
+	</body>
+</html>

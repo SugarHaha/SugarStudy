@@ -1,0 +1,44 @@
+<!--
+智能社© - http://www.zhinengshe.com/
+
+微博：@北京智能社
+微信：zhi_neng_she
+
+最具深度的前端开发培训机构 HTML+CSS/JS/HTML5
+-->
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>单一按钮显示/隐藏 - 智能社 - www.zhinengshe.com</title>
+<link href="zns_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+	function dow_list_showhide(){
+		var oDownList=document.getElementById('dropa');
+		if(oDownList.style.display=='none'){
+			oDownList.style.display='block'
+		}else{
+			oDownList.style.display='none'
+		}
+	}
+</script>
+</head>
+
+<body>
+
+<div id="drop" class="down_list" onclick="dow_list_showhide()">
+    <h2>播放列表...</h2>
+    <ul id="dropa">
+        <li><a href="#">玩爱之徒 - 蔡依林</a></li>
+        <li><a href="#">原谅我就是这样的女生 - 戴佩妮</a></li>
+        <li><a href="#">猜不透 - 丁当</a></li>
+        <li><a href="#">自导自演 - 周杰伦</a></li>
+        <li><a href="#">浪漫窝 - 弦子</a></li>
+        <li><a href="#">流年 - 王非</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

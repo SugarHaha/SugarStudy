@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#box{ width: 300px; height: 300px; background: #fff; border: 3px solid #f2f2f2; padding: 15px; text-align: center; display: none;}
+		</style>
+		<script type="text/javascript">
+			function topopup(){
+				var oPopup=document.getElementById('box');
+				oPopup.style.display='block';
+			}
+			function tohide(){
+				var oPopup=document.getElementById('box');
+				oPopup.style.display='none'
+			}
+		</script>
+	</head>
+	<body>
+		<button type="button" onclick="topopup()">弹窗</button>
+		<div id="">
+			<div id="box">
+				<p>我是弹窗哈哈哈</p>
+				<button type="button" onclick="tohide()">隐藏</button>
+			</div>
+		</div>
+	</body>
+</html>
